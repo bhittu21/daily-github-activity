@@ -1,19 +1,19 @@
 # Daily GitHub Activity Automation
 
-A minimal, safe, and fully automatic setup to keep daily GitHub activity using GitHub Actions.
+A minimal, safe, and fully automatic setup that generates daily GitHub activity using GitHub Actions.
 
 No servers  
-No personal tokens  
+No personal access tokens  
 No paid services  
 
 ---
 
-## How it works
+## What this repository does
 
-- GitHub Actions runs once per day
-- A small update is generated automatically
-- The change is committed back to this repository
-- The contribution graph stays active
+- Runs a scheduled GitHub Action once per day
+- Generates a small, deterministic update
+- Commits the change back to this repository
+- Keeps the contribution graph active
 
 Everything runs inside GitHub.
 
@@ -21,34 +21,48 @@ Everything runs inside GitHub.
 
 ## Automation status
 
-![Daily Commit](https://github.com/bhittu21/daily-github-activity/actions/workflows/daily.yml/badge.svg)
+![Daily GitHub Activity](https://github.com/bhittu21/daily-github-activity/actions/workflows/daily.yml/badge.svg)
 
 ---
 
 ## Activity tracking
 
-This repository keeps a log of automated runs.
+Two files track automation history.
 
-- File: `activity.log`
-- One entry per successful execution
+### activity.log
+- One line per successful run
 - Appended daily
+- Acts as an audit trail
+
+### stats.md
+- Human-readable summary
+- Shows total automated runs
+- Shows last execution time
 
 ---
 
 ## Why this approach
 
-- No credential exposure
-- No external dependencies
+- No external infrastructure
+- No long-lived credentials
 - Safe for public repositories
 - Zero maintenance after setup
 
 ---
 
-## Who this is for
+## Who should use this
 
 - Developers who want consistent GitHub activity
 - Busy engineers during exams, work, or travel
-- Anyone learning GitHub Actions by example
+- Anyone learning GitHub Actions from a real example
+
+---
+
+## What this is not
+
+- Proof of coding skill
+- A replacement for real work
+- A LeetCode submission bot
 
 ---
 
