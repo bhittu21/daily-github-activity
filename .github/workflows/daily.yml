@@ -32,9 +32,10 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "bhittu21"
+          git config user.email "219447337+bhittu21@users.noreply.github.com"
 
           git add activity.log stats.md
           git commit -m "automated daily activity" || exit 0
           git push
+
