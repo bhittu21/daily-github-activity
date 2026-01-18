@@ -2,7 +2,7 @@ name: Daily GitHub Activity
 
 on:
   schedule:
-    - cron: "5 0 * * *"
+    - cron: "5 18 * * *"
   workflow_dispatch:
 
 permissions:
@@ -38,4 +38,5 @@ jobs:
           git add activity.log stats.md
           git commit -m "automated daily activity" || exit 0
           git push
+
 
